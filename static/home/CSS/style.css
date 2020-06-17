@@ -1,0 +1,117 @@
+  @font-face {
+      font-family: "peachcream";
+      src: url("../fonts/peachcream.ttf") format("truetype");
+  }
+  
+  body {
+      font-family: "Poppins", sans-serif;
+      padding: 20pt 20pt 20pt 0;
+      height: 100%;
+  }
+  
+  nav {
+      width: 100%;
+  }
+  
+  body {
+      box-sizing: border-box;
+  }
+  
+  .nav {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      background-color: none;
+  }
+  
+  .nav .logo {
+      display: block;
+  }
+  
+  .nav .logo h4 {
+      font-family: peachcream;
+      font-size: 60px;
+      color: purple;
+      transition: 0.9s;
+  }
+  
+  .nav .logo h4:hover {
+      color: brown;
+      cursor: pointer;
+  }
+  
+  .nav .list {
+      display: flex;
+      flex-flow: row;
+  }
+  
+  .nav .list ul {
+      padding: 0;
+  }
+  
+  .nav .list ul li {
+      font-size: 15pt;
+      display: inline;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0pt 20pt 0 20pt;
+      transition: 0.3s;
+  }
+  
+  .nav .list ul li:first-child {
+      margin-left: 0;
+      padding: 0pt 20pt 0 20pt;
+      background-color: rgba(0, 128, 0, 0.4);
+      margin-left: 5pt;
+      border-radius: 5px;
+  }
+  
+  .nav .list .menu ul li:hover {
+      background-color: rgba(0, 128, 0, 0.9);
+      border-radius: 10px;
+      color: purple;
+  }
+  
+  .nav .list ul li a {
+      color: brown;
+  }
+  
+  .nav .list .login {
+      display: flex;
+      flex-flow: row;
+      position: absolute;
+      right: 50pt;
+  }
+  
+  .nav .list .login i {
+      color: brown;
+      font-size: 20pt !important;
+      margin-right: 5pt;
+  }
+  
+  .nav .list .login h5 {
+      color: brown;
+  }
+  
+  .nav .list .menu ul li a:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: purple;
+  }
+  
+  .nav .list .login:hover * {
+      cursor: pointer;
+      color: purple;
+  }
+  
+  .container {
+      position: relative;
+  }
+  
+  .container .img-background {
+      height: 300px;
+      background-image: url(../images/background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 5px;
+  }

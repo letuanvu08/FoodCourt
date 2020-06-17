@@ -1,0 +1,22 @@
+{% extends 'home/base.html' %} 
+{% load static %}
+{% block extraheader %}
+<link rel="stylesheet" type="text/css" href="{% static 'login/CSS/style.css' %}" />
+{% endblock  %}
+
+{% block container%}
+<div class="form-login">
+    <h3>Login</h3>
+    <form>
+        <div class="form-group">
+            <label for=""><i class="fa fa-user" aria-hidden="true"></i> User</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for=""><i class="fa fa-lock" aria-hidden="true"></i> Pass</label>
+            <input type="password" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+        </div>
+        <a name="" id="" class="btn btn-primary" href="#" role="button">Submit</a>
+    </form>
+</div>
+{% endblock %}
